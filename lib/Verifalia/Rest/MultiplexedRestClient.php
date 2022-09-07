@@ -40,7 +40,7 @@ namespace Verifalia\Rest {
             $this->authenticator = $authenticator;
         }
 
-        public function sendRequest($method = self::HTTP_METHOD_GET, $relativePath, $query = null, $data = null)
+        public function sendRequest($method = self::HTTP_METHOD_GET, $relativePath = null, $query = null, $data = null)
         {
             $errors = [];
 
